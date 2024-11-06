@@ -141,3 +141,7 @@ D:\Office Projects\CandidateAPI Task\CandidateAPI\CandidateAPI Task\CandidateAPI
 D:\Office Projects\CandidateAPI Task\CandidateAPI\CandidateAPI Task\CandidateAPI\obj\Debug\net8.0\CandidateAPI.pdb
 D:\Office Projects\CandidateAPI Task\CandidateAPI\CandidateAPI Task\CandidateAPI\obj\Debug\net8.0\CandidateAPI.genruntimeconfig.cache
 D:\Office Projects\CandidateAPI Task\CandidateAPI\CandidateAPI Task\CandidateAPI\obj\Debug\net8.0\ref\CandidateAPI.dll
+D:\Office Projects\CandidateAPI Task\CandidateAPI\CandidateAPI Task\CandidateAPI\bin\Debug\net8.0\MySqlConnector.dll
+D:\Office Projects\CandidateAPI Task\CandidateAPI\CandidateAPI Task\CandidateAPI\bin\Debug\net8.0\Npgsql.dll
+D:\Office Projects\CandidateAPI Task\CandidateAPI\CandidateAPI Task\CandidateAPI\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+D:\Office Projects\CandidateAPI Task\CandidateAPI\CandidateAPI Task\CandidateAPI\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
