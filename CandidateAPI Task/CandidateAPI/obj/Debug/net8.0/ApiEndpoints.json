@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "CandidateController",
+    "Method": "AddOrUpdateCandidate",
+    "RelativePath": "api/Candidate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "candidate",
+        "Type": "CandidateAPI.Models.Candidate",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
