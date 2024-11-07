@@ -22,9 +22,8 @@ The following assumptions were made during the development of this project:
 - **Controlled API Usage**: The API is expected to serve a limited number of clients initially. Scaling requirements may necessitate enhancements like rate limiting or a different caching strategy.
 
 ## ⏳ Total Time Spent
-Total time spent on this task: 8 hours
-Initial Projest setup: 2 hours
-Controller and Services: 2.5 hours
-Unit Test: 2.5 hours
-Implementing Caching: 1
-
+Total time spent on this task: 8 hours  
+Initial Projest setup: 2 hours  
+Controller and Services: 2.5 hours  
+Unit Test: 2.5 hours  
+Implementing Caching: 1  
