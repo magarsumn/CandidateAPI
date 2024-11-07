@@ -26,4 +26,4 @@ Total time spent on this task: 8 hours
 Initial Projest setup: 2 hours  
 Controller and Services: 2.5 hours  
 Unit Test: 2.5 hours  
-Implementing Caching: 1  
+Implementing Caching: 1 hour 
