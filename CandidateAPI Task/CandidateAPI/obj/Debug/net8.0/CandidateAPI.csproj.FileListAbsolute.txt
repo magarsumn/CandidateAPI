@@ -38,6 +38,10 @@ D:\Office Projects\CandidateAPI Task\CandidateAPI\CandidateAPI Task\CandidateAPI
 D:\Office Projects\CandidateAPI Task\CandidateAPI\CandidateAPI Task\CandidateAPI\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
 D:\Office Projects\CandidateAPI Task\CandidateAPI\CandidateAPI Task\CandidateAPI\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
 D:\Office Projects\CandidateAPI Task\CandidateAPI\CandidateAPI Task\CandidateAPI\bin\Debug\net8.0\Mono.TextTemplating.dll
+D:\Office Projects\CandidateAPI Task\CandidateAPI\CandidateAPI Task\CandidateAPI\bin\Debug\net8.0\MySqlConnector.dll
+D:\Office Projects\CandidateAPI Task\CandidateAPI\CandidateAPI Task\CandidateAPI\bin\Debug\net8.0\Npgsql.dll
+D:\Office Projects\CandidateAPI Task\CandidateAPI\CandidateAPI Task\CandidateAPI\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+D:\Office Projects\CandidateAPI Task\CandidateAPI\CandidateAPI Task\CandidateAPI\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
 D:\Office Projects\CandidateAPI Task\CandidateAPI\CandidateAPI Task\CandidateAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\Office Projects\CandidateAPI Task\CandidateAPI\CandidateAPI Task\CandidateAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\Office Projects\CandidateAPI Task\CandidateAPI\CandidateAPI Task\CandidateAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -141,7 +145,3 @@ D:\Office Projects\CandidateAPI Task\CandidateAPI\CandidateAPI Task\CandidateAPI
 D:\Office Projects\CandidateAPI Task\CandidateAPI\CandidateAPI Task\CandidateAPI\obj\Debug\net8.0\CandidateAPI.pdb
 D:\Office Projects\CandidateAPI Task\CandidateAPI\CandidateAPI Task\CandidateAPI\obj\Debug\net8.0\CandidateAPI.genruntimeconfig.cache
 D:\Office Projects\CandidateAPI Task\CandidateAPI\CandidateAPI Task\CandidateAPI\obj\Debug\net8.0\ref\CandidateAPI.dll
-D:\Office Projects\CandidateAPI Task\CandidateAPI\CandidateAPI Task\CandidateAPI\bin\Debug\net8.0\MySqlConnector.dll
-D:\Office Projects\CandidateAPI Task\CandidateAPI\CandidateAPI Task\CandidateAPI\bin\Debug\net8.0\Npgsql.dll
-D:\Office Projects\CandidateAPI Task\CandidateAPI\CandidateAPI Task\CandidateAPI\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
-D:\Office Projects\CandidateAPI Task\CandidateAPI\CandidateAPI Task\CandidateAPI\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll

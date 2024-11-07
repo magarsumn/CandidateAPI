@@ -2,15 +2,20 @@
 using CandidateAPI.Interfaces;
 using CandidateAPI.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Caching.Memory;
 
 namespace CandidateAPI.Services
 {
     public class CandidateService : ICandidateService
     {
         private readonly ApplicationDbContext _appDbContext;
-        public CandidateService(ApplicationDbContext appDbContext)
+        private readonly IMemoryCache _memoryCache;
+        private const string CandidateCacheKey = "Cache_Candidate_{0}";
+
+        public CandidateService(ApplicationDbContext appDbContext, IMemoryCache memoryCache)
         {
             _appDbContext = appDbContext;
+            _memoryCache = memoryCache;
         }
 
         public async Task<Candidate> AddOrUpdateCandidateAsync(Candidate candidate)
@@ -23,13 +28,17 @@ namespace CandidateAPI.Services
                 throw new Exception("A candidate with this email already exists.");
             }
 
-            // Find the candidate by ID and update
-            var existingCandidate = await _appDbContext.Candidates
-                .FirstOrDefaultAsync(c => c.Id == candidate.Id);
+            // Try to get the candidate from cache first
+            string cacheKey = string.Format(CandidateCacheKey, candidate.Id);
+            if (!_memoryCache.TryGetValue(cacheKey, out Candidate existingCandidate))
+            {
+                // If candidate not found in cache, check in database
+                existingCandidate = await _appDbContext.Candidates
+                    .FirstOrDefaultAsync(c => c.Id == candidate.Id);
+            }
 
             if (existingCandidate != null)
             {
-                // Update existing candidate
                 existingCandidate.FirstName = candidate.FirstName;
                 existingCandidate.LastName = candidate.LastName;
                 existingCandidate.Email = candidate.Email;
@@ -43,12 +52,20 @@ namespace CandidateAPI.Services
             }
             else
             {
-                // Create a new candidate
                 await _appDbContext.Candidates.AddAsync(candidate);
+                existingCandidate = candidate;
             }
 
             await _appDbContext.SaveChangesAsync();
-            return candidate;
+
+            // Update the cache with the new or updated candidate
+            _memoryCache.Set(cacheKey, existingCandidate, new MemoryCacheEntryOptions
+            {
+                AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(10),
+                SlidingExpiration = TimeSpan.FromMinutes(5)
+            });
+
+            return existingCandidate;
         }
     }
 }
